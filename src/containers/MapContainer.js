@@ -191,8 +191,11 @@ class MapsContainer extends Component {
           }
         </section>
 
+        {/* Search Button */}
+        <Button className="mt-4 fw-md searchBtn" type="primary" size="large" onClick={this.handleSearch}>Search!</Button>
+
         {/* Maps Section */}
-        <section className="col-8 h-lg googlemap">
+        <section className="col-8 h-lg">
           <GoogleMapReact
             bootstrapURLKeys={{
               key: '',
@@ -212,9 +215,6 @@ class MapsContainer extends Component {
             })}
           </GoogleMapReact>
         </section>
-
-        {/* Search Button */}
-        <Button className="mt-4 fw-md" type="primary" size="large" onClick={this.handleSearch}>Search!</Button>
 
         {/* Results section */}
         {searchResults.length > 0 ?

@@ -161,3 +161,8 @@
 .w-100 {
   width: 40rem;
 }
+
+.searchBtn {
+  position: relative;
+  right: 0;
+}
