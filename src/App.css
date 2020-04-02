@@ -1,38 +1,163 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-leftside {
+  width: 50%;
+  background-color: #E38B5E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-rightside {
+  width: 50%;
+  background-color: #141A46;
+  padding: 25px 40px;
+  overflow: auto;
+}
+
+.pageSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+
+.pageSwitcher-item {
+  background-color: #4C5D72;
+  color: #9DA6B1;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: .9em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.pageSwitcher-item-Active {
+  background-color: #E38B5E;
+  color: white;
+}
+
+.pageSwitcher-item:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.pageSwitcher-item:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.formCenter {
+  margin-bottom: 100px;
+}
+
+.formTitle {
+  color: #707C8B;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.formTitle-Link {
+  color: #707C8B;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.formTitle-Link:first-child {
+  margin-left: 0;
+}
+
+.formTitle-Link--Active {
+  color: white;
+  border-bottom: 1px solid #E38B5E;
+}
+
+.centerFinder {
+  color: white;
+  border-left: 3px solid #F0EAD6;
+  padding-left: 1rem;
+}
+
+.FormField {
+  margin-bottom: 40px;
+}
+
+.FormField__Label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: white;
+}
+.FormField__Input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.FormField__Input::placeholder {
+  color: #616E7F;
+}
+
+.FormField__Button {
+  background-color: #E38B5E;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  font-size: .8em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.FormField__Link {
+  color: #66707D;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1.5px solid #E38B5E;
+  padding-bottom: 5px;
+}
+
+.FormField__CheckboxLabel {
+  color: #646F7D;
+  font-size: .9em;
+}
+
+.FormField__Checkbox {
+  position: relative;
+}
+
+.FormField__TermsLink {
+  color: white;
+  border-bottom: 1px solid #E38B5E;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+
+.image-wrapper-sm {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 15rem;
+  width: 100%;
+}
+
+.h-lg {
+  height: 20rem;
+}
+
+.w-100 {
+  width: 40rem;
 }
